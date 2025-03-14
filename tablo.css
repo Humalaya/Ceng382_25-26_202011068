@@ -1,0 +1,81 @@
+.portrait {
+    width: 120px;
+    height: 180px;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head {
+    width: 40px;
+    height: 40px;
+    background: #fcd5b5;
+    border-radius: 50%;
+    position: relative;
+}
+
+.eye {
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+}
+
+.eye.left { left: 10px; }
+.eye.right { right: 10px; }
+
+.top-hat {
+    width: 40px;
+    height: 30px;
+    background: black;
+    position: absolute;
+    top: -30px;
+}
+
+.top-hat::after {
+    content: "";
+    width: 60px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    bottom: -5px;
+    left: -10px;
+}
+
+/* bıyık ai ile yapıldı */
+.mustache::before{
+    content:"";
+    position:absolute;
+    left:-4px;
+    top:3px;
+    width:21px;
+    height:12px;
+    border-bottom:solid 18px currentColor;
+    border-radius:0 0 0 100%;
+    transform:rotate(-40deg);
+    transform-origin:right 21px;
+}
+
+.mustache::after{
+    content:"";
+    position:absolute;
+    left:23px;
+    top:3px;
+    width:21px;
+    height:12px;
+    border-bottom:solid 18px currentColor;
+    border-radius:0 0 100%0;
+    transform:rotate(40deg);
+    transform-origin:left 21px;
+}
+
+.body {
+    width: 60px;
+    height: 80px;
+    background: orange;
+    border-radius: 10px;
+}
