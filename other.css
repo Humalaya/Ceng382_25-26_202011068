@@ -1,0 +1,90 @@
+/*font ai ile yapıldı */
+@font-face {
+    font-family: 'Castellar';
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #d1c4b2, #a89276);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#clock {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.gallery-title {
+    font-family: 'Castellar', serif;
+    font-size: 32px;
+    color: #f5f5dc; /* Beige color */
+    margin: 10px 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.painting {
+    width: 150px;
+    height: 200px;
+    background: brown;
+    border: 15px solid #8b5a2b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* portre */
+
+.login {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background: #2980b9;
+}
