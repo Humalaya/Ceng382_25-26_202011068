@@ -1,0 +1,30 @@
+C:\Users\DELL\Desktop\ceng 382 new\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\DELL\Desktop\ceng 382 new\bin\Debug\net8.0\appsettings.json
+C:\Users\DELL\Desktop\ceng 382 new\bin\Debug\net8.0\ceng 382 new.staticwebassets.runtime.json
+C:\Users\DELL\Desktop\ceng 382 new\bin\Debug\net8.0\ceng 382 new.exe
+C:\Users\DELL\Desktop\ceng 382 new\bin\Debug\net8.0\ceng 382 new.deps.json
+C:\Users\DELL\Desktop\ceng 382 new\bin\Debug\net8.0\ceng 382 new.runtimeconfig.json
+C:\Users\DELL\Desktop\ceng 382 new\bin\Debug\net8.0\ceng 382 new.dll
+C:\Users\DELL\Desktop\ceng 382 new\bin\Debug\net8.0\ceng 382 new.pdb
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.AssemblyInfo.cs
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.RazorAssemblyInfo.cache
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.RazorAssemblyInfo.cs
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\staticwebassets\msbuild.ceng 382 new.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\staticwebassets\msbuild.build.ceng 382 new.props
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ceng 382 new.props
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ceng 382 new.props
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\scopedcss\bundle\ceng 382 new.styles.css
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\scopedcss\projectbundle\ceng 382 new.bundle.scp.css
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.dll
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\refint\ceng 382 new.dll
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.pdb
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ceng 382 new.genruntimeconfig.cache
+C:\Users\DELL\Desktop\ceng 382 new\obj\Debug\net8.0\ref\ceng 382 new.dll

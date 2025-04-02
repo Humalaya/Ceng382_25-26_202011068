@@ -1,0 +1,183 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Class Management";
+}
+<style>
+    body, html {
+        background-color: #0c0c1e;
+        color: #e0e0ff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+        background-color: #10102a ;
+        border-bottom: 1px solid #1a1a3a;
+    }
+
+    .card {
+        background-color: #1a1a3a;
+        border: 1px solid #342a4a;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    .card-header {
+        background-color: #121230;
+        border-bottom: 1px solid #2a2a4a;
+        color: #b0b0ff;
+    }
+
+    .table-dark {
+        background-color: #1a1a3a;
+    }
+
+    .table-dark th {
+        background-color: #121230;
+        color: #b0b0ff;
+    }
+
+    .form-control {
+        background-color: #121230 ;
+        border-color: #2a2a4a;
+        color: #e0e0ff ;
+    }
+
+    .form-control:focus {
+        background-color: #1a1a3a ;
+        border-color: #4a4a6a;
+        box-shadow: 0 0 0 0.2rem rgba(74, 74, 106, 0.25);
+    }
+
+    .btn-warning {
+        background-color: #ffd700;
+        color: #000;
+    }
+
+    .nav-link {
+        color: #b0b0ff ;
+    }
+
+    .nav-link:hover {
+        color: #ffffff ;
+    }
+
+    /* Space-themed background effect */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(#ffffff 1px, transparent 1px),
+            radial-gradient(#ffffff 1px, transparent 1px);
+        background-position: 0 0, 25px 25px;
+        background-size: 50px 50px;
+        opacity: 0.05;
+        pointer-events: none;
+        z-index: -1;
+    }
+</style>
+
+<nav class="navbar navbar-dark navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Class Information Management</a>
+        <div class="navbar-nav">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/Privacy">Privacy</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h5 class="mb-0">@(Model.IsEditing ? "Edit Class" : "Add New Class")</h5>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <input type="hidden" asp-for="ClassData.Id" />
+
+                        <div class="mb-3">
+                            <label asp-for="ClassData.ClassName" class="form-label">Class Name</label>
+                            <input asp-for="ClassData.ClassName" class="form-control" placeholder="Enter class name" />
+                            <span asp-validation-for="ClassData.ClassName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ClassData.StudentCount" class="form-label">Student Count</label>
+                            <input asp-for="ClassData.StudentCount" class="form-control" type="number" placeholder="Enter student count" />
+                            <span asp-validation-for="ClassData.StudentCount" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ClassData.Description" class="form-label">Description</label>
+                            <textarea asp-for="ClassData.Description" class="form-control" placeholder="Enter description"></textarea>
+                            <span asp-validation-for="ClassData.Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" asp-page-handler="@(Model.IsEditing ? "UpdateClass" : "Add")" class="btn btn-warning">
+                                @(Model.IsEditing ? "Update" : "Add") Class
+                            </button>
+                        </div>
+                        
+                        @if (Model.IsEditing)
+                        {
+                            <div class="mt-2 text-center">
+                                <a asp-page="/Index" class="btn btn-secondary btn-sm">Cancel</a>
+                            </div>
+                        }
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h5 class="mb-0">Class List</h5>
+                </div>
+                <div class="card-body">
+                    <table class="table table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Class Name</th>
+                                <th>Student Count</th>
+                                <th>Description</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.ClassList)
+                            {
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.ClassName</td>
+                                    <td>@item.StudentCount</td>
+                                    <td>@item.Description</td>
+                                    <td>
+                                        <form method="post">
+                                            <input type="hidden" name="id" value="@item.Id" />
+                                            <button type="submit" asp-page-handler="Edit" class="btn btn-warning btn-sm">Edit</button>
+                                            <button type="submit" asp-page-handler="Delete" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    @if (!Model.ClassList.Any())
+                    {
+                        <p class="text-center text-muted mt-3">No classes added yet.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
